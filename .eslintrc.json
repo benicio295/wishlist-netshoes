@@ -1,0 +1,24 @@
+{
+	"extends": ["next/core-web-vitals", "eslint:recommended", "plugin:prettier/recommended"],
+	"rules": {
+		"arrow-spacing": "warn",
+		"eqeqeq": ["error", "always"],
+		"no-confusing-arrow": "warn",
+		"no-useless-return": "warn",
+		"no-var": "error",
+		"brace-style": "error",
+		"no-duplicate-imports": "warn",
+		"no-self-compare": "error",
+		"no-template-curly-in-string": "error",
+		"require-atomic-updates": "error",
+		"default-case-last": "warn",
+		"func-names": ["warn", "always"],
+		"init-declarations": ["warn", "always"],
+		"no-empty-function": "warn",
+		"no-floating-decimal": "warn",
+		"no-lone-blocks": "warn",
+		"no-param-reassign": "error",
+		"no-unused-expressions": "warn",
+		"spaced-comment": ["warn", "always"]
+	}
+}

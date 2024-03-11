@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply font-source_sans_3
+}
+
+::selection {
+    @apply text-white bg-purple
+}
+
+p {
+    @apply text-xl
+}
+
+section {
+    @apply page_margin mobile:justify-center flex flex-wrap gap-10 pt-7
+}
+
+@layer utilities {
+    .page_margin {
+        @apply max-w-[83rem] m-auto pl-3 pr-3
+    }
+}
