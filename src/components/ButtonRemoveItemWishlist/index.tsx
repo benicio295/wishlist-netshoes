@@ -1,9 +1,9 @@
 'use client';
 
-import { TItemWishlist } from '@/type';
-import { CloseSVG } from './SVGs/CloseSVG';
-import { Dispatch, SetStateAction } from 'react';
 import { removeItemWishlistLocalStorage, saveWishlistToLocalStorage } from '@/helpers/localStorage';
+import { TItemWishlist } from '@/type';
+import { Dispatch, SetStateAction } from 'react';
+import { CloseSVG } from '../SVGs/CloseSVG';
 
 export function ButtonRemoveItemWishlist({
 	wishlistData,

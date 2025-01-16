@@ -1,6 +1,6 @@
 import { TNavigation } from '@/type';
 import Link from 'next/link';
-
+// ! TESTAR ButtonSaveToWishlist e ButtonRemoveItemWishlist
 export function Breadcrumb({ paths }: { paths: TNavigation[] }) {
 	return (
 		<>
@@ -8,16 +8,16 @@ export function Breadcrumb({ paths }: { paths: TNavigation[] }) {
 				<ul className="flex gap-1 text-xl text-purple">
 					{paths.map((path, index) => (
 						<div className="flex gap-1" key={index}>
-							{index + 1 === paths.length ? (
-								<li>
+							<li>
+								{index + 1 === paths.length ? (
 									<p className="font-bold">{path.name}</p>
-								</li>
-							) : (
-								<li>
+								) : (
 									<Link href={path.href}>{path.name}</Link>
-								</li>
+								)}
+							</li>
+							{paths.length !== index + 1 && (
+								<div role="separator" className="after:content-['/']" />
 							)}
-							{paths.length !== index + 1 && <div className="after:content-['/']" />}
 						</div>
 					))}
 				</ul>

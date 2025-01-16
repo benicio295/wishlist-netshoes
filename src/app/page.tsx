@@ -1,6 +1,6 @@
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { Card } from '@/components/Card';
 import { ButtonSaveToWishlist } from '@/components/ButtonSaveToWishlist';
+import { Card } from '@/components/Card';
 import { TDataAPI } from '@/type';
 
 export default async function Home() {
@@ -11,7 +11,13 @@ export default async function Home() {
 
 	return (
 		<>
-			<Breadcrumb paths={[{ name: 'Home', href: '/' }]} />
+			<Breadcrumb
+				paths={[
+					{ name: 'Home', href: '/' },
+					{ name: 'Outro', href: '/' },
+					{ name: 'Outro', href: '/' }
+				]}
+			/>
 			<section>
 				{dataAPI ? (
 					dataAPI.products.map(productInfo => (

@@ -1,7 +1,7 @@
 'use client';
 
-import { Card } from '@/components/Card';
 import { ButtonRemoveItemWishlist } from '@/components/ButtonRemoveItemWishlist';
+import { Card } from '@/components/Card';
 import { getDataWishlistLocalStorage } from '@/helpers/localStorage';
 import { TItemWishlist } from '@/type';
 import { useEffect, useState } from 'react';

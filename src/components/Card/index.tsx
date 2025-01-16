@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { StarsSVG } from './SVGs/StarsSVG';
 import { formatNumber } from '@/helpers/formatNumber';
+import Image from 'next/image';
+import { StarsSVG } from '../SVGs/StarsSVG';
 
 export function Card({
 	altImage,

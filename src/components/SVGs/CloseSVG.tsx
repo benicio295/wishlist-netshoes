@@ -1,6 +1,11 @@
 export function CloseSVG({ className }: { className: string }) {
 	return (
-		<svg className={className} viewBox="0 0 95 95" xmlns="http://www.w3.org/2000/svg">
+		<svg
+			role="menu-icon"
+			aria-label="close-menu"
+			className={className}
+			viewBox="0 0 95 95"
+			xmlns="http://www.w3.org/2000/svg">
 			<rect
 				x="10.8259"
 				y="0.893127"

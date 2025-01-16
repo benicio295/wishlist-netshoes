@@ -5,9 +5,9 @@ import {
 	removeItemWishlistLocalStorage,
 	saveWishlistToLocalStorage
 } from '@/helpers/localStorage';
-import { HeartSVG } from './SVGs/HeartSVG';
 import { TItemWishlist } from '@/type';
 import { useEffect, useState } from 'react';
+import { HeartSVG } from '../SVGs/HeartSVG';
 
 export function ButtonSaveToWishlist({ dataToSaveWishlist }: { dataToSaveWishlist: TItemWishlist }) {
 	const [isSavedItemWishlistLocalstorage, setIsSavedItemWishlistLocalstorage] = useState<boolean>(false);
